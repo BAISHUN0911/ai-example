@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "E:\\development\\nodejs\\npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "E:\\tmp",
+        "E:\\tmp"
+      ]
+    },
+    "mcp-server-demo": {
+      "command": "D:\\airui\\jdk\\bin\\java.exe",
+      "args": [
+        "-Dfile.encoding=utf-8",
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-jar",
+        "E:\\development\\workspace\\github\\ai-example\\mcp-example\\mcp-server-demo\\target\\mcp-server-demo.jar"
+      ]
+    },
+    "mcp-server-csdn": {
+      "command": "D:\\airui\\jdk\\bin\\java.exe",
+      "args": [
+        "-Dfile.encoding=utf-8",
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-jar",
+        "E:\\development\\workspace\\github\\ai-example\\mcp-example\\mcp-server-csdn\\target\\mcp-server-csdn.jar"
+      ]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+2025-08-01T09:51:31.820+08:00  INFO 17580 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : Starting McpServerCsdnApplication using Java 21.0.4 with PID 17580 (E:\development\workspace\github\ai-example\mcp-example\mcp-server-csdn\target\mcp-server-csdn.jar started by 13265 in E:\development\workspace\github\ai-example\mcp-example\mcp-client-demo)
+2025-08-01T09:51:31.866+08:00  INFO 17580 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T09:51:33.662+08:00  INFO 17580 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-08-01T09:51:33.753+08:00  INFO 17580 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 2
+2025-08-01T09:51:33.753+08:00  INFO 17580 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-08-01T09:51:33.754+08:00  INFO 17580 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-08-01T09:51:33.754+08:00  INFO 17580 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-08-01T09:51:33.949+08:00  INFO 17580 --- [mcp-server-csdn] [pool-1-thread-1] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2024-11-05, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null], Info: Implementation[name=mcp-demo-client - mcp-server-csdn, version=1.0.0]
+2025-08-01T09:51:34.226+08:00  INFO 17580 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : Started McpServerCsdnApplication in 3.513 seconds (process running for 4.512)
+2025-08-01T09:51:34.232+08:00  INFO 17580 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : mcp server computer success!
+2025-08-01T09:51:48.689+08:00  INFO 17580 --- [mcp-server-csdn] [boundedElastic-1] c.b.mcpservercsdn.service.CsdnService    : CSDN发帖
+标题:PostgreSQL面试三大难题：企业级开发场景详解
+ 内容:# PostgreSQL面试三大难题：企业级开发场景详解
+
+PostgreSQL作为一款功能强大的开源关系型数据库，在企业级应用中扮演着越来越重要的角色。面试中关于PostgreSQL的问题也愈发深入，以下三个问题结合了实际开发场景，是考察候选人技术深度的常见问题。
+
+## 问题一：如何优化PostgreSQL查询性能？
+
+### 场景描述
+在电商平台中，用户经常需要查询商品信息，包括商品名称、价格、库存等。随着商品数量的增加，查询性能逐渐下降。
+
+### 解决方案
+1. **索引优化**：为常用查询字段创建合适的索引，如商品名称、价格等。可以使用B-tree索引，对于全文搜索可以使用GIN索引。
+2. **查询重写**：避免使用SELECT *，只查询必要的字段；使用EXPLAIN ANALYZE分析查询计划，优化查询语句。
+3. **分区表**：对于大型表，可以按照时间或类别进行分区，提高查询效率。
+4. **连接池**：使用连接池管理数据库连接，减少连接开销。
+
+## 问题二：如何处理PostgreSQL中的死锁问题？
+
+### 场景描述
+在多用户并发环境下，多个事务同时操作同一数据时，容易发生死锁。
+
+### 解决方案
+1. **事务隔离级别**：根据业务需求选择合适的事务隔离级别，如READ COMMITTED或REPEATABLE READ。
+2. **事务粒度**：尽量减小事务的粒度，避免长时间持有锁。
+3. **锁超时**：设置锁超时时间，避免事务长时间等待。
+4. **死锁检测**：使用PostgreSQL的死锁检测机制，及时处理死锁。
+
+## 问题三：如何实现PostgreSQL的高可用和容灾？
+
+### 场景描述
+在金融系统中，数据库的高可用和容灾能力至关重要，需要确保数据不丢失且服务不中断。
+
+### 解决方案
+1. **主从复制**：配置主从复制，主库负责写操作，从库负责读操作，提高系统的可用性和扩展性。
+2. **流复制**：使用流复制实现实时数据同步，确保主从库数据一致。
+3. **故障转移**：配置自动故障转移，当主库故障时，从库可以自动提升为主库。
+4. **备份策略**：定期进行全量和增量备份，确保数据的安全性。
+
+通过以上三个问题的解答，可以看出PostgreSQL在实际开发场景中的应用和优化方法。掌握这些技术，将有助于在面试中脱颖而出。
+ 标签:PostgreSQL,数据库,面试,性能优化,高可用
+
+2025-08-01T09:51:50.435+08:00  INFO 17580 --- [mcp-server-csdn] [boundedElastic-1] c.b.mcpservercsdn.service.CsdnService    : 成功发布文章: PostgreSQL面试三大难题：企业级开发场景详解, 当前时间：2025-08-01T09:51:50.435708400
+2025-08-01T10:02:13.624+08:00  INFO 25216 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : Starting McpServerCsdnApplication using Java 21.0.4 with PID 25216 (E:\development\workspace\github\ai-example\mcp-example\mcp-server-csdn\target\mcp-server-csdn.jar started by 13265 in E:\development\workspace\github\ai-example\mcp-example\mcp-client-demo)
+2025-08-01T10:02:13.630+08:00  INFO 25216 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T10:02:15.371+08:00  INFO 25216 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-08-01T10:02:15.444+08:00  INFO 25216 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 2
+2025-08-01T10:02:15.445+08:00  INFO 25216 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-08-01T10:02:15.446+08:00  INFO 25216 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-08-01T10:02:15.447+08:00  INFO 25216 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-08-01T10:02:15.626+08:00  INFO 25216 --- [mcp-server-csdn] [pool-1-thread-1] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2024-11-05, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null], Info: Implementation[name=mcp-demo-client - mcp-server-csdn, version=1.0.0]
+2025-08-01T10:02:15.856+08:00  INFO 25216 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : Started McpServerCsdnApplication in 3.273 seconds (process running for 4.13)
+2025-08-01T10:02:15.868+08:00  INFO 25216 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : mcp server computer success!
+2025-08-01T10:02:27.656+08:00  INFO 25216 --- [mcp-server-csdn] [boundedElastic-1] c.b.mcpservercsdn.service.CsdnService    : CSDN发帖
+标题:Java SE技术面试必杀技：3个常见问题让你轻松拿下高薪offer
+ 内容:## Java SE技术面试常见问题及答案
+
+### 问题1：在Java中，如何实现线程安全？在实际开发中，如何选择合适的同步机制？
+
+**回答：**
+在Java中，实现线程安全的主要方式包括使用synchronized关键字、Lock接口、原子类等。在实际开发中，选择合适的同步机制需要根据具体场景来判断。
+
+1. 如果是简单的同步需求，可以使用synchronized关键字，因为它简单易用，但要注意避免死锁和性能问题。
+2. 如果需要更灵活的锁机制，可以使用Lock接口，如ReentrantLock，它可以实现公平锁、可中断锁等高级功能。
+3. 对于一些简单的原子操作，可以使用原子类，如AtomicInteger，它们内部使用CAS（Compare And Swap）机制，性能较高。
+
+### 问题2：Java集合框架中，HashMap和Hashtable有什么区别？在实际开发中，如何选择使用哪一个？
+
+**回答：**
+HashMap和Hashtable的主要区别如下：
+
+1. 线程安全：HashMap是非线程安全的，而Hashtable是线程安全的，因为它内部使用了synchronized关键字。
+2. Null值：HashMap允许使用一个null键和多个null值，而Hashtable不允许使用null键和null值。
+3. 性能：HashMap的性能通常比Hashtable好，因为它不需要处理线程安全问题。
+
+在实际开发中，如果需要线程安全，可以选择Hashtable或使用Collections.synchronizedMap方法包装HashMap；如果不需要线程安全，优先选择HashMap，因为它性能更好。
+
+### 问题3：Java中的异常处理机制是什么？在实际开发中，如何合理地使用异常处理？
+
+**回答：**
+Java中的异常处理机制包括try-catch-finally语句块和throws关键字。在实际开发中，合理地使用异常处理需要注意以下几点：
+
+1. 对于可预知的异常，应该使用try-catch语句捕获并处理，避免程序崩溃。
+2. 对于不可预知的异常，可以使用throws关键字向上抛出，由调用者处理。
+3. 不要过度使用异常处理，避免代码冗余和性能问题。
+4. 在finally块中释放资源，确保资源不会泄漏。
+
+通过合理地使用异常处理，可以提高程序的健壮性和可维护性。
+ 标签:Java,SE,面试,技术
+
+2025-08-01T10:02:29.300+08:00  INFO 25216 --- [mcp-server-csdn] [boundedElastic-1] c.b.mcpservercsdn.service.CsdnService    : 成功发布文章: Java SE技术面试必杀技：3个常见问题让你轻松拿下高薪offer, 当前时间：2025-08-01T10:02:29.300155900

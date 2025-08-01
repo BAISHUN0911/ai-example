@@ -1,0 +1,20 @@
+2025-08-01T09:51:18.131+08:00  INFO 25724 --- [mcp-server-demo] [main] c.b.m.McpServerDemoApplication           : Starting McpServerDemoApplication using Java 21.0.4 with PID 25724 (E:\development\workspace\github\ai-example\mcp-example\mcp-server-demo\target\mcp-server-demo.jar started by 13265 in E:\development\workspace\github\ai-example\mcp-example\mcp-client-demo)
+2025-08-01T09:51:18.150+08:00  INFO 25724 --- [mcp-server-demo] [main] c.b.m.McpServerDemoApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T09:51:20.575+08:00  INFO 25724 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-08-01T09:51:20.660+08:00  INFO 25724 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 1
+2025-08-01T09:51:20.661+08:00  INFO 25724 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-08-01T09:51:20.662+08:00  INFO 25724 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-08-01T09:51:20.662+08:00  INFO 25724 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-08-01T09:51:20.819+08:00  INFO 25724 --- [mcp-server-demo] [pool-1-thread-1] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2024-11-05, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null], Info: Implementation[name=mcp-demo-client - mcp-server-demo, version=1.0.0]
+2025-08-01T09:51:21.034+08:00  INFO 25724 --- [mcp-server-demo] [main] c.b.m.McpServerDemoApplication           : Started McpServerDemoApplication in 3.79 seconds (process running for 4.785)
+2025-08-01T09:51:21.044+08:00  INFO 25724 --- [mcp-server-demo] [main] c.b.m.McpServerDemoApplication           : mcp server computer success!
+2025-08-01T10:02:06.771+08:00  INFO 30932 --- [mcp-server-demo] [main] c.b.m.McpServerDemoApplication           : Starting McpServerDemoApplication using Java 21.0.4 with PID 30932 (E:\development\workspace\github\ai-example\mcp-example\mcp-server-demo\target\mcp-server-demo.jar started by 13265 in E:\development\workspace\github\ai-example\mcp-example\mcp-client-demo)
+2025-08-01T10:02:06.774+08:00  INFO 30932 --- [mcp-server-demo] [main] c.b.m.McpServerDemoApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T10:02:08.633+08:00  INFO 30932 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-08-01T10:02:08.726+08:00  INFO 30932 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 1
+2025-08-01T10:02:08.726+08:00  INFO 30932 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-08-01T10:02:08.727+08:00  INFO 30932 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-08-01T10:02:08.728+08:00  INFO 30932 --- [mcp-server-demo] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-08-01T10:02:08.903+08:00  INFO 30932 --- [mcp-server-demo] [pool-1-thread-1] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2024-11-05, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null], Info: Implementation[name=mcp-demo-client - mcp-server-demo, version=1.0.0]
+2025-08-01T10:02:09.147+08:00  INFO 30932 --- [mcp-server-demo] [main] c.b.m.McpServerDemoApplication           : Started McpServerDemoApplication in 3.256 seconds (process running for 4.07)
+2025-08-01T10:02:09.156+08:00  INFO 30932 --- [mcp-server-demo] [main] c.b.m.McpServerDemoApplication           : mcp server computer success!

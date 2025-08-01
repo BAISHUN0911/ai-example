@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.baishun</groupId>
+        <artifactId>ai-example</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>mcp-example</artifactId>
+    <version>${revision}</version>
+    <name>mcp-example</name>
+    <description>mcp-example</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>mcp-client-demo</module>
+        <module>mcp-server-demo</module>
+        <module>mcp-server-csdn</module>
+        <module>mcp-server-csdn-webflux</module>
+    </modules>
+
+</project>

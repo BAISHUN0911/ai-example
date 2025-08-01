@@ -1,0 +1,13 @@
+server:
+  port: 10003
+
+spring:
+  application:
+    name: mcp-demo
+  ai:
+    zhipuai:
+      api-key: d4a15a67bd9c4694bb77ce6a1d4f842c.TfydnFOMQDKj6zcx
+      base-url: "https://open.bigmodel.cn/api/paas"
+      chat:
+        options:
+          model: glm-4-air-250414
