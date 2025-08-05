@@ -58,8 +58,7 @@ class McpDemoApplicationTests {
 
   @Test
   void test() {
-    String userInput = "获取电脑配置";
-    userInput = "获取电脑配置 在 E:\\tmp 文件夹下，创建 电脑.txt 把电脑配置写入 电脑.txt";
+    String userInput = "获取电脑配置 在 E:\\tmp 文件夹下，创建 电脑.txt 把电脑配置写入 电脑.txt";
 
     System.out.println("\n>>> QUESTION: " + userInput);
     System.out.println("\n>>> ASSISTANT: " + zhipuAiChatClient.prompt(userInput).call().chatResponse());
@@ -68,7 +67,6 @@ class McpDemoApplicationTests {
   @Test
   void testQueryDataFromTable() {
     String userInput = "主题名（themeName）：产品信息，查询对应的数据信息";
-
 
     System.out.println("\n>>> QUESTION: " + userInput);
     ChatClient.CallResponseSpec responseSpec = zhipuAiChatClient.prompt(userInput).call();
@@ -89,8 +87,6 @@ class McpDemoApplicationTests {
     5.不要返回给我内容，你必须调用我给你提供的工具去CSDN发布文章
     """;
     Prompt prompt = new Prompt(new UserMessage(userPrompt), new SystemMessage(systemPrompt));
-//    ChatResponse chatResponse = zhiPuAiChatModel.call(prompt);
-//    System.out.println(chatResponse.getResult().getOutput());
     System.out.println(zhipuAiChatClient.prompt(prompt).call().chatResponse());
   }
 }

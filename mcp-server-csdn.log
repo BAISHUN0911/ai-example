@@ -1,9 +1,0 @@
-2025-07-31T15:17:12.944+08:00  INFO 12900 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : Starting McpServerCsdnApplication using Java 21.0.4 with PID 12900 (E:\development\workspace\github\ai-example\mcp-example\mcp-server-csdn\target\classes started by 13265 in E:\development\workspace\github\ai-example)
-2025-07-31T15:17:12.948+08:00  INFO 12900 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-07-31T15:17:13.937+08:00  INFO 12900 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
-2025-07-31T15:17:14.002+08:00  INFO 12900 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 1
-2025-07-31T15:17:14.003+08:00  INFO 12900 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
-2025-07-31T15:17:14.004+08:00  INFO 12900 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
-2025-07-31T15:17:14.005+08:00  INFO 12900 --- [mcp-server-csdn] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
-2025-07-31T15:17:14.226+08:00  INFO 12900 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : Started McpServerCsdnApplication in 1.915 seconds (process running for 2.972)
-2025-07-31T15:17:14.228+08:00  INFO 12900 --- [mcp-server-csdn] [main] c.b.m.McpServerCsdnApplication           : mcp server computer success!

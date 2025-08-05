@@ -19,8 +19,20 @@ spring:
         version: 1.0.0
         type: SYNC  # or ASYNC for reactive applications
         request-timeout: 15s
-        stdio:
-          servers-configuration: classpath:/mcp-servers-config.json
+#        stdio:
+#          servers-configuration: classpath:/mcp-servers-config.json
+        sse:
+          connections:
+            mcp-server-csdn-webflux:
+              url: http://localhost:8080/
+  main:
+    web-application-type: none
 
-#  main:
-#    web-application-type: servlet
+
+# 调试日志
+logging:
+  level:
+    io:
+      modelcontextprotocol:
+        client: DEBUG
+        spec: DEBUG

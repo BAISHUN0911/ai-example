@@ -38,20 +38,10 @@
             <artifactId>spring-ai-starter-mcp-client-webflux</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-starter-mcp-server-webflux</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-starter-mcp-server</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>
-        <finalName>mcp-demo</finalName>
+        <finalName>mcp-client-demo</finalName>
     </build>
 
 </project>

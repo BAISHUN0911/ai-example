@@ -48,5 +48,5 @@ build/
 **/node/**
 **/logs/**
 
-logs/
+*.log
 **/.db/*

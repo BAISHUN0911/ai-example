@@ -57,12 +57,13 @@ public class ClientService {
   public String postCsdnArticle() {
     String systemPrompt = "你是一个资深的Java开发工程师，请按照以下要求，生成一个 CSDN 博客文章并发布。";
     String userPrompt = """
-            请编写关于 %s 技术的3个常见面试问题并附上回答，问题应该结合当下企业实际开发场景。
+            请编写关于 %s 技术的3个常见面试问题并附上回答，问题必须结合当下企业实际开发场景。
             你需要注意以下几点
             1.在给文章取标题时，应该与你写的技术内容有关
             2.尽可能让标题更吸引读者，标题可以适当的夸张、夸大
             3.文章内容不要有无关信息，不要有你的语气词。
             4.不要返回给我内容，你必须调用我给你提供的工具去CSDN发布文章
+            5.每个问题的回答必须要详细，必须要举一个实际企业开发中的场景
             """;
     Prompt prompt = new Prompt(new UserMessage(String.format(userPrompt, getPoint())), new SystemMessage(systemPrompt));
 

@@ -17,7 +17,7 @@
 
     <modules>
         <module>mcp-client-demo</module>
-        <module>mcp-server-demo</module>
+        <module>mcp-server-db</module>
         <module>mcp-server-csdn</module>
         <module>mcp-server-csdn-webflux</module>
     </modules>
