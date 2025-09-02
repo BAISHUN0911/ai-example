@@ -7,22 +7,8 @@
     <artifactId>ai-example</artifactId>
     <version>${revision}</version>
     <name>ai-example</name>
-    <description>ai-example</description>
+    <description>Spring AI/Alibaba AI example</description>
     <packaging>pom</packaging>
-
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
 
     <modules>
         <module>tool-demo</module>
