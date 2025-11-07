@@ -9,18 +9,21 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>mcp-client-demo</artifactId>
-    <name>mcp-demo</name>
-    <description>mcp-demo</description>
+    <name>mcp-client-demo</name>
+    <description>mcp-client-demo</description>
     <version>${revision}</version>
 
-    <properties>
-        <java.version>21</java.version>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-webflux -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-webflux</artifactId>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: mcp-demo
+    name: mcp-client-demo
 
   ai:
     zhipuai:
@@ -23,10 +23,10 @@ spring:
 #          servers-configuration: classpath:/mcp-servers-config.json
         sse:
           connections:
-            mcp-server-csdn-webflux:
-              url: http://localhost:8080/
+            idaas-v2:
+              url: http://localhost:8080/idaas-api-v2
   main:
-    web-application-type: none
+    web-application-type: servlet
 
 
 # 调试日志
